@@ -1,0 +1,250 @@
+body {
+	font-size: 16px;
+	color: #000000;
+	background-color: #F0F8FF;
+	font-family: Arial, serif;
+}
+
+/** Header**/
+#header-nav {
+  background-color: #7FFFD4;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+	background: url('../image/logo.png') no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0;
+	float: left;
+}
+
+.navbar-brand {
+	padding-top: 50px;
+}
+
+.navbar-brand h1 { /** restaurant name**/
+  font-family: Arial, serif;
+  color: #FF7F50;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+.navbar-brand p span { /*vegan frendly*/
+  vertical-align: middle;
+  margin-top: 10px;
+}
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a {
+	color: #000000;
+	text-align: center;
+}
+#nav-list a:hover {
+	background: #e7e7e7;
+}
+#nav-list a span{
+	font-size: 1.8em;
+}
+#phone {
+	margin-top: 5px;
+}
+#phone a{
+	text-align: right;
+	padding-bottom: 0;
+}
+#phone div {
+	color: #557c3e;
+	text-align: right;
+	padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar { /** navbar display setting**/
+	border: 1px solid #483D8B;
+}
+
+.navbar-header button.navbar-toggle { /**Food LLC will be included in the navbar area**/
+	clear: both;
+	margin-top: -30px; /**decrease the navbar area when xs**/
+}
+
+/*Ender Header*/
+
+h2 {
+	text-align: center;
+	font-size: 2.0em;
+	font-family: Arial, serif;
+	font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+}
+
+
+
+
+
+
+
+/******* Large Devices Only *******/
+@media (min-width: 1200px) {
+
+}
+
+
+/******* Medium Devices Only *******/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #logo-img {
+  	background: url('../image/restaurant-logo_medium.png') no-repeat;
+  	width: 100px;
+  	height: 100px;
+  	margin: 5px 5px 5px 0;
+  }
+}
+
+
+
+/******* Small Devices Only *******/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+/******* Extra Small Devices Only *******/
+@media (max-width: 767px) {
+  .navbar-brand {
+  	padding-top: 10px;
+  	height: 80px;
+  }
+  .navbar-brand h1{
+  	padding-top: 10px;
+  	font-size: 5vw;
+  }
+  .navbar-brand p span {
+  	text-transform: uppercase;
+  	font-size: .6em;
+  	margin-top: 12px;
+  }
+
+  #collapsable-nav a { /*Collapsed nav menu glyph */
+  	font-size: 1.2em;
+  }
+  #collapsable-nav a span {
+  	font-size: 1em;
+  	margin-right: 5px;
+  }
+}
+
+
+
+
+.container .row p {
+	width: 90%;
+	padding: 15px 5px 0px 5px;
+	font-family: Arial, serif;
+	font-size: 16px;
+	position: relative;
+	background-color: #FFA07A;
+}
+
+
+#nr1, #nr2, #nr3 {
+	font-family: Arial, serif;
+	font-size: 1.9em;
+	color: #000000;
+}
+
+.container .row span {
+    font-size: 20px;
+	width: 150px;
+	border: 2px solid black;
+	font-weight: bold;
+	text-align: center;	
+	position: relative;
+}
+
+
+
+/*Floating Back-To-Top Button*/
+    #myBtn {
+        position: fixed;
+        bottom: 20px;
+        float: right;
+        right: 18.5%;
+        left: 77.25%;
+        max-width: 120px;
+        width: 100%;
+        font-size: 15px;
+        border-color: rgba(85, 85, 85, 0.2);
+        background-color: rgb(100,100,100);
+        padding: .5px;
+        border-radius: 4px;
+        text-decoration: none;
+
+    }
+/*On Hover Color Change*/
+    #myBtn:hover {
+        background-color: #7dbbf1;
+    }
+
+
+
+
+
+/**
+
+.section { 
+	background-color: #A9A9A9;
+   	border: 2px solid black;
+   	margin-top: 20px; 
+   	margin-right: 20px; 
+   	padding: 3px;
+   	text-align: justify;
+   	position: relative;
+ }
+
+
+
+
+.row {
+	width: 100%;
+}
+
+/* Desktop PC view *
+
+@media (min-width: 992px) {
+ 
+  .col-lg-4 {
+    width: 33.33%;
+    float: left;
+	}
+}
+
+/* Tablet PC view *
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+    float: left;
+  }
+}
+/********** Small devices only **********
+@media (max-width: 767px)  {
+  
+  .col-sx-12 {
+  	float: left;
+    width: 100%;
+  }
+}
